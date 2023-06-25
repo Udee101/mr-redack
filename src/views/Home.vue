@@ -1,13 +1,10 @@
 <script setup>
-
-defineProps({
-  msg: String,
-})
-
 </script>
 
 <template>
-  <h1 class=" text-lg">{{ msg }}</h1>
+  <div class="p-4 text-lg">
+    <h3>Home Page</h3>
+  </div>
 </template>
 
 <style scoped>
