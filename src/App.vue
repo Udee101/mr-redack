@@ -1,5 +1,4 @@
 <script setup>
-import Home from './views/Home.vue';
 import SideBar from './components/SideBar.vue';
 import TopBar from './components/TopBar.vue';
 
@@ -8,10 +7,10 @@ import TopBar from './components/TopBar.vue';
 <template>
   <div class="layout flex min-h-screen">
     <header class="fixed block w-full lg:hidden">
-      <TopBar />
+      <top-bar></top-bar>
     </header>
     <aside class="hidden h-screen w-72 lg:block">
-      <SideBar />
+      <side-bar></side-bar>
     </aside>
     <main class="content flex-1 max-w-screen-lg mx-auto mt-20">
       <router-view></router-view>

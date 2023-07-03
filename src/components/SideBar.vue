@@ -1,4 +1,5 @@
 <script setup>
+import { navLinks } from '../data/index.js'
 </script>
 
 <template>
@@ -6,30 +7,22 @@
     <nav class="px-4 py-10">
       <div class="logo pr-14 py-1 mt-12 flex place-content-end">
         <router-link :to="{name: 'home'}">
-          <img src="../assets/logo.svg" alt="redack's logo">
+          <img src="../assets/logo.svg" alt="redack's logo" class=" w-[120px]">
         </router-link>
       </div>
       <div class="mt-[17vh] flex flex-col place-items-center text-xl">
         <ul class="space-y-10">
-          <li class="px-4 py-1">
-            <a href="#">Home</a>
+          <li 
+            v-for="navItem in navLinks" 
+            :key="navItem.id"
+            class="px-4 py-1 font-medium"
+          >
+            <a :href="navItem.href">{{ navItem.linkTitle }}</a>
           </li>
 
-          <li class="px-4 py-1">
+          <!-- <li class="px-4 py-1">
             <router-link :to="{name: 'portfolio.category'}">Portfolio</router-link>
-          </li>
-
-          <li class="px-4 py-1">
-            <a href="#">About</a>
-          </li>
-
-          <li class="px-4 py-1">
-            <a href="#">Skills</a>
-          </li>
-
-          <li class="px-4 py-1">
-            <a href="#">Contact</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>
@@ -37,13 +30,7 @@
 </template>
 
 <style scoped>
-li{
-  font-weight: 500;
-}
 .sidenav{
   background: url(../assets/sidebg.svg) no-repeat center; 
-}
-img{
-  width: 120px;
 }
 </style>
