@@ -3,21 +3,23 @@ import { navLinks } from '../data/index.js'
 </script>
 
 <template>
-  <div class="h-screen fixed left-0 w-72 sidenav text-white">
+  <div class="h-screen fixed left-0 w-64 sidenav text-white">
     <nav class="px-4 py-10">
-      <div class="logo pr-14 py-1 mt-12 flex place-content-end">
+      <div class="logo pr-10 py-1 mt-4 flex place-content-end">
         <router-link :to="{name: 'home'}">
-          <img src="../assets/logo.svg" alt="redack's logo" class=" w-[120px]">
+          <img src="../assets/images/logo.svg" alt="redack's logo" class=" w-[120px]">
         </router-link>
       </div>
-      <div class="mt-[17vh] flex flex-col place-items-center text-xl">
+      <div class="mt-[17vh] flex flex-col place-items-center text-lg">
         <ul class="space-y-10">
           <li 
             v-for="navItem in navLinks" 
             :key="navItem.id"
             class="px-4 py-1 font-medium"
           >
-            <a :href="navItem.href">{{ navItem.linkTitle }}</a>
+            <button class="uppercase transition ease-in-out duration-300 hover:text-[#BE8C07] hover:scale-105">
+              <a :href="navItem.href">{{ navItem.linkTitle }}</a>
+            </button>
           </li>
 
           <!-- <li class="px-4 py-1">
