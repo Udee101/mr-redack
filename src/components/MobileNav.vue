@@ -8,8 +8,11 @@ const emits = defineEmits(['nav-close'])
   <div class="flex relative place-content-center items-center h-full">
     <div 
       @click="$emit('navClose')" 
-      class=" cursor-pointer absolute top-0 right-0 m-4 p-3 border border-gray-200 rounded-lg text-white font-bold text-xl"
-    >X</div>
+      class=" cursor-pointer absolute top-0 right-0 m-4 py-1 px-3 border border-gray-200 text-white font-bold text-xl"
+    >
+      <p class=" rotate-90">&gt;</p>
+    </div>
+    
     <nav>
       <ul class="space-y-10">
         <li

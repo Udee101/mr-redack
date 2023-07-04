@@ -31,6 +31,12 @@ import { navLinks } from '../data/index.js'
 
 <style scoped>
 .sidenav{
-  background: url(../assets/sidebg.svg) no-repeat center; 
+  background: linear-gradient(
+    to bottom, 
+    rgb(0, 0, 0), 
+    rgb(27, 25, 25), 
+    rgb(0, 0, 0),  
+    rgb(15, 14, 14)
+  );
 }
 </style>

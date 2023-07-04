@@ -1,12 +1,13 @@
 <script setup>
 import { ref } from 'vue';
 import MobileNav from '../components/MobileNav.vue'
+import NavTransition from './NavTransition.vue';
 
 const navOpen = ref(false)
 </script>
 
 <template>
-  <div class=" topbar flex place-content-between w-full place-items-center h-14 p-6 text-white">
+  <div class=" topbar flex place-content-between w-full place-items-center h-16 p-6 text-white">
     <div>
       <router-link :to="{name: 'home'}">
         <img class=" w-28" src="../assets/logo.svg" alt="redack's logo">
@@ -17,16 +18,12 @@ const navOpen = ref(false)
     </div>
   </div>
 
-  <Transition
-    enter-active-class="transition ease-out duration-300"
-    leave-active-class="transition ease-in duration-300"
-    enter-from-class="opacity-0 translate-y-20"
-    leave-to-class="opacity-0 translate-y-20"
-  >
+  <nav-transition>
     <div v-if="navOpen" class="navbar fixed bottom-0 w-full h-[410px] bg-[#0D0B0B] z-10">
       <mobile-nav @nav-close="navOpen = false"></mobile-nav>
     </div>
-  </Transition>
+  </nav-transition>
+
 </template>
 
 <style scoped>
