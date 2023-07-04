@@ -19,9 +19,11 @@ const emits = defineEmits(['nav-close'])
           @click="$emit('navClose')"
           v-for="navItem in navLinks" 
           :key="navItem.id" 
-          class="nav-links text-white font-medium text-xl uppercase"
+          class="nav-links text-white font-medium text-xl"
         >
-          <a :href="navItem.href">{{ navItem.linkTitle }}</a>
+          <button class="hover:text-[#BE8C07] uppercase">
+            <a :href="navItem.href">{{ navItem.linkTitle }}</a>
+          </button>
         </li>
       </ul>
     </nav>
