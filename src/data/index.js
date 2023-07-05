@@ -20,3 +20,18 @@ export const navLinks = [
     href: '#contact'
   }
 ]
+
+export const projectCategories = [
+  {
+    name: 'Social Media'
+  },
+  {
+    name: 'Logo & Brand Identity'
+  },
+  {
+    name: 'Activations, OOH Podiums'
+  },
+  {
+    name: 'UI/UX'
+  }
+]
