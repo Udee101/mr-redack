@@ -42,6 +42,10 @@
   src: url('./fonts/Demo-The-Seasons/Fontspring-DEMO-theseasons-reg.otf');
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 @layer components {
   .nav-btn {
     @apply  text-white font-medium text-xl uppercase transition ease-in-out duration-300 hover:text-site-gold hover:scale-105;
