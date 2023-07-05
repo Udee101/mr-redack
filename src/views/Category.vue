@@ -1,12 +1,20 @@
 <script setup>
+import { categoryData } from '../data/index';
+
+
+const props = defineProps({
+  id: {
+    type: String,
+    required: true
+  }
+})
 </script>
   
 <template>
-  <div class="p-4">
-    <h3>Activations</h3>
-  </div>
+  <section class="p-4 translate-y-28">
+    <div>{{ categoryData[id-1] }}</div>
+  </section>
 </template>
 
 <style scoped>
-
 </style>
