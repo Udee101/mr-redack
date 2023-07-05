@@ -18,11 +18,11 @@ const navOpen = ref(false)
     </div>
   </div>
 
-  <nav-transition>
-    <div v-if="navOpen" class="navbar fixed bottom-0 w-full h-[410px] bg-[#0D0B0B] z-[1]">
-      <mobile-nav @nav-close="navOpen = false"></mobile-nav>
+  <NavTransition>
+    <div v-if="navOpen" class="navbar fixed bottom-0 w-full h-[410px] bg-site-black z-[1]">
+      <MobileNav @nav-close="navOpen = false"></MobileNav>
     </div>
-  </nav-transition>
+  </NavTransition>
 
 </template>
 

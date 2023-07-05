@@ -5,6 +5,6 @@
     enter-from-class="opacity-0 translate-y-20"
     leave-to-class="opacity-0 translate-y-20"
   >
-    <slot></slot>
+    <slot />
   </Transition>
 </template>

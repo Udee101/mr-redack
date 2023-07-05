@@ -5,18 +5,15 @@ import TopBar from './components/TopBar.vue';
 </script>
 
 <template>
-  <div class="layout flex min-h-screen">
+  <div class="layout flex min-h-screen font-mainFont">
     <header class="fixed block w-full z-[1] lg:hidden">
-      <top-bar></top-bar>
+      <TopBar></TopBar>
     </header>
     <aside class="hidden h-screen w-64 lg:block">
-      <side-bar></side-bar>
+      <SideBar></SideBar>
     </aside>
     <main class="flex-1">
       <router-view></router-view>
     </main>
   </div>
 </template>
-
-<style scoped>
-</style>

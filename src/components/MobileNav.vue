@@ -1,34 +1,37 @@
 <script setup>
 import { navLinks } from '../data/index'
+import NavButton from './NavButton.vue';
+
 
 const emits = defineEmits(['nav-close'])
+const navClose = () => {
+  emits('nav-close')
+}
 </script>
 
 <template>
   <div class="flex relative place-content-center items-center h-full">
-    <div 
-      @click="$emit('navClose')" 
-      class=" cursor-pointer absolute top-0 right-0 m-4 py-1 px-3 border border-gray-200 text-white font-bold text-xl"
+    <NavButton
+      button-class="close-mob-nav"
+      :click-event="navClose"
     >
-      <p class=" rotate-90">&gt;</p>
-    </div>
+      <p class="rotate-90">&gt;</p>
+    </NavButton>
     
     <nav>
       <ul class="space-y-10">
         <li
-          @click="$emit('navClose')"
           v-for="navItem in navLinks" 
           :key="navItem.id" 
-          class="nav-links text-white font-medium text-xl"
         >
-          <button class="hover:text-[#BE8C07] uppercase">
+          <NavButton 
+            button-class="nav-btn"
+            :click-event="navClose"
+          >
             <a :href="navItem.href">{{ navItem.linkTitle }}</a>
-          </button>
+          </NavButton>
         </li>
       </ul>
     </nav>
   </div>
 </template>
-
-<style scoped>
-</style>
