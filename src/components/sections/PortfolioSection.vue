@@ -1,6 +1,6 @@
 <script setup>
-import CategoryCard from './CategoryCard.vue';
-import { projectCategories } from '../data/index.js'
+import CategoryCard from '../CategoryCard.vue';
+import { projectCategories } from '../../data/index.js'
 </script>
 
 <template>
