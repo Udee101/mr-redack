@@ -4,10 +4,10 @@ import HeroText from './HeroText.vue'
 </script>
 
 <template>
-  <section id="hero" class="p-4 h-screen">
-    <div class=" max-w-site-w w-full mx-auto translate-y-20 py-12 md:translate-y-32">
+  <section id="hero" class="p-4 min-h-screen">
+    <div class=" max-w-site-w w-full mx-auto py-10 md:translate-y-32">
       <div class="hero-sec-layout">
-        <HeroCard card-class="w-[300px] h-[420px] bg-site-gold mx-auto p-1 md:mx-0 md:w-[320px] md:h-[480px] lg:w-[95%]"
+        <HeroCard card-class="w-[300px] h-[420px] bg-site-gold mx-auto p-1 mt-20 md:m-0 md:w-[320px] md:h-[480px] lg:w-[95%]"
         >
           <div class=" w-full h-[90%] bg-orange-950 mx-auto"></div>
         </HeroCard>
