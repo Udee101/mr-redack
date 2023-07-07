@@ -5,7 +5,7 @@ import HeroText from './HeroText.vue'
 
 <template>
   <section id="hero" class="p-4 h-screen">
-    <div class=" max-w-site-w w-full mx-auto translate-y-28 md:translate-y-36">
+    <div class=" max-w-site-w w-full mx-auto translate-y-20 py-12 md:translate-y-32">
       <div class="hero-sec-layout">
         <HeroCard card-class="w-[300px] h-[420px] bg-site-gold mx-auto p-1 md:mx-0 md:w-[320px] md:h-[480px] lg:w-[95%]"
         >
@@ -14,10 +14,10 @@ import HeroText from './HeroText.vue'
         
         <HeroText>
           <template #label>
-            <p class="text-site-gold text-2xl font-titleFont md:text-4xl lg:text-5xl">Portfolio</p>
+            <p class="text-site-gold text-2xl font-titleFont md:text-4xl lg:text-[2.75rem]">Portfolio</p>
           </template>
           <template #name>
-            <p class=" text-4xl font-headerFont pr-10 md:text-6xl md:pr-0 lg:text-8xl">Isaac Akpoborie Ovie</p>
+            <p class=" text-4xl font-headerFont pr-10 md:text-6xl md:pr-0 lg:text-7xl">Isaac Akpoborie Ovie</p>
           </template>
           <template #description>
             <p class="md:text-xl">
