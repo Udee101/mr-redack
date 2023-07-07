@@ -8,7 +8,7 @@
 
 <template>
 	<section id="about" class="p-4 bg-site-gray">
-		<div class="relative max-w-site-w mx-auto py-10 min-h-full">
+		<div class="relative max-w-site-w mx-auto py-14 min-h-screen">
        <p class=" absolute right-0 m-2 text-site-gold text-2xl font-titleFont md:text-4xl">About</p>
 			<div class="grid grid-cols-1 gap-y-20 lg:grid-cols-2">
 				<div class="relative mx-auto max-w-lg md:w-full md:flex md:place-items-center mt-20 md:min-h-[400px] lg:order-1 lg:m-0">
