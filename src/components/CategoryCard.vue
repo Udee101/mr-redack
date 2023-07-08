@@ -1,5 +1,5 @@
 <script setup>
-  const props = defineProps({
+  defineProps({
     imgSrc: String,
     name: String,
     categoryId: Number 
@@ -11,7 +11,7 @@
     <img :src="imgSrc" alt="category image" class=" col-span-2" />
     <router-link 
       :to="{ name: 'categories.id', params: { id: categoryId } }"
-      class="transition ease-in-out duration-300 max-w-[240px] text-2xl text-center font-semibold text-white absolute bottom-2 lg:relative lg:text-left lg:text-3xl lg:-ml-20 hover:text-site-gold hover:scale-105"
+      class="transition ease-in-out duration-300 max-w-[240px] text-2xl text-center font-semibold text-white absolute bottom-2 md:text-[1.7rem] lg:relative lg:text-left lg:-ml-16 hover:text-site-gold hover:scale-105"
     >
       {{ name }}
     </router-link>
