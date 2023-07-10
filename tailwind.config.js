@@ -14,7 +14,8 @@ export default {
       colors: {
         'site-gold': '#BE8C07',
         'site-black': '#0D0B0B',
-        'site-gray': '#262626'
+        'site-gray': '#262626',
+        'input-gray': '#707070'
       }
     },
   },
