@@ -3,9 +3,6 @@ export default {
   content: ['./src/**/*.{vue,js}'],
   theme: {
     extend: {
-      backgroundImage: {
-        'hero-bg': "url('./src/assets/images/bg.svg')"
-      },
       fontFamily: {
         titleFont: ['Brittany-signature'],
         headerFont: ['The-seasons'],
