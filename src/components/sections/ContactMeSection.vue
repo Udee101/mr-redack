@@ -37,7 +37,7 @@ import ContactForm from '../ContactForm.vue';
 
         <div class="text-center text-site-gold font-titleFont text-[2rem] mb-4 md:hidden">Contact</div>
 
-        <div class="mt-2 max-w-lg">
+        <div class="mt-2 lg:w-[90%]">
           <ContactForm></ContactForm>
         </div>
 

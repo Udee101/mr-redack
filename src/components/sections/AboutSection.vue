@@ -7,13 +7,13 @@
 </script>
 
 <template>
-	<section id="about" class="p-4 bg-site-gray">
+	<section id="about" class="p-4 bg-site-gray overflow-hidden">
 		<div class="relative max-w-site-w mx-auto py-14 min-h-screen">
        <p class=" absolute right-0 m-2 text-site-gold text-2xl font-titleFont md:text-4xl">About</p>
 			<div class="min-h-[85vh] grid grid-cols-1 gap-y-20 items-center lg:grid-cols-2">
 				<div class="relative mx-auto max-w-lg md:w-full md:flex md:place-items-center mt-20 md:min-h-[400px] lg:order-1 lg:m-0 lg:-ml-4">
 					<ImageCard
-						card-class="-rotate-[10deg] w-[220px] h-[280px] bg-site-gold p-1 md:w-[250px] h-[380px] md:absolute md:top-0 md:left-28 lg:relative lg:w-[350px] lg:h-[400px]"
+						card-class="-rotate-[10deg] w-[250px] h-[280px] bg-site-gold p-1 md:w-[280px] h-[380px] md:absolute md:top-0 md:left-28 lg:relative lg:w-[350px] lg:h-[400px]"
 					>
 						<div class="w-full h-[90%] bg-orange-950 mx-auto"></div>
 					</ImageCard>
