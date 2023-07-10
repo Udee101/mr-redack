@@ -19,7 +19,7 @@ const formData = ref({
 
 		<div>
 			<textarea
-				class="w-full h-28 resize-none border-none placeholder:uppercase placeholder:text-site-gold p-2 md:h-40 lg:h-56"
+				class="w-full h-36 resize-none border-none placeholder:uppercase placeholder:text-site-gold p-2 md:h-40 lg:h-56"
 				name=""
 				placeholder="Message"
 				v-model="formData.message"
