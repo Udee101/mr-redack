@@ -4,10 +4,10 @@ import SectionText from '../SectionText.vue'
 </script>
 
 <template>
-  <section id="hero" class="p-4 min-h-screen">
-    <div class=" max-w-site-w w-full mx-auto py-10 md:translate-y-32">
-      <div class="hero-sec-layout">
-        <ImageCard card-class=" w-[300px] h-[420px] bg-site-gold mx-auto p-1 mt-20 md:m-0 md:w-[320px] md:h-[480px] lg:w-[95%]"
+  <section id="hero" class="p-4 min-h-screen bg-hero-bg bg-no-repeat bg-center">
+    <div class=" max-w-site-w w-full mx-auto py-10">
+      <div class="hero-sec-layout min-h-[85vh]">
+        <ImageCard card-class=" w-[300px] h-[420px] bg-site-gold mx-auto p-1 mt-20 md:m-0 md:w-[320px] md:h-[450px] lg:w-[95%]"
         >
           <div class=" w-full h-[90%] bg-orange-950 mx-auto"></div>
         </ImageCard>
@@ -30,9 +30,3 @@ import SectionText from '../SectionText.vue'
     </div>
   </section>
 </template>
-
-<style scoped>
-#hero{
-  background: url(../../assets/images/bg.svg) no-repeat center;
-}
-</style>

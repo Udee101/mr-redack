@@ -4,7 +4,7 @@ import ContactForm from '../ContactForm.vue';
 </script>
 
 <template>
-  <section id="contact" class="p-4 bg-site-gray overflow-hidden">
+  <section id="contact" class="relative p-4 bg-site-gray overflow-hidden">
     <div class=" relative max-w-site-w mx-auto min-h-screen">
       <p class=" hidden absolute right-0 mx-2 my-14 text-site-gold text-2xl font-titleFont md:block md:text-4xl">Contact</p>
       <div class="py-14 grid gap-y-5 min-h-[85vh] md:grid-cols-2 md:gap-x-5 md:items-end">
@@ -21,10 +21,10 @@ import ContactForm from '../ContactForm.vue';
 
           <!-- Social icons for tablet & desktop-->
           <div class="hidden space-x-2 md:flex lg:space-x-4">
-            <a href="#" class="duration-500 hover:opacity-70 hover:translate-y-2">
+            <a href="#" class="duration-500 hover:opacity-70 hover:-translate-y-1">
               <img src="../../assets/images/ig.svg" alt="insagram icon" class="md:h-6 lg:h-9" />
             </a>
-            <a href="#" class="duration-500 hover:opacity-70 hover:translate-y-2">
+            <a href="#" class="duration-500 hover:opacity-70 hover:-translate-y-1">
               <img src="../../assets/images/linkedin.svg" alt="linkedIn icon" class="md:h-6 lg:h-9" />
             </a>
           </div>
@@ -53,9 +53,9 @@ import ContactForm from '../ContactForm.vue';
       </div>
 
       <!-- Ring image for tablet & desktop -->
-      <div class="hidden absolute -right-4 -bottom-4 md:block lg:-right-28">
-        <img src="../../assets/images/ring1.svg" alt="golden ring image" class="hidden md:block md:w-40 lg:w-44">
-      </div>
+    </div>
+    <div class="hidden absolute right-0 bottom-0 md:block">
+      <img src="../../assets/images/ring1.svg" alt="golden ring image" class="hidden md:block md:w-40 xl:w-44">
     </div>
   </section>
 </template>
