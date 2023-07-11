@@ -20,8 +20,8 @@ const navOpen = ref(false)
   <Transition
     enter-active-class="duration-500"
     leave-active-class="duration-500"
-    enter-from-class="opacity-0 translate-y-20"
-    leave-to-class="opacity-0 translate-y-20"
+    enter-from-class="opacity-0 translate-y-52"
+    leave-to-class="opacity-0 translate-y-52"
   >
     <div v-if="navOpen" class="navbar fixed bottom-0 w-full h-[400px] bg-site-black z-[1]">
       <MobileNav @nav-close="navOpen = false"></MobileNav>
