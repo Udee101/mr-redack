@@ -128,3 +128,30 @@ export const categoryData = [
     ]
   }
 ]
+
+export const mySkills = [
+  {
+    title: "Graphics Design",
+    proficiency: "95%"
+  },
+  {
+    title: "PHOTOGRAPHY & EDITING",
+    proficiency: "85%"
+  },
+  {
+    title: "VIDEO DIRECTION & EDITING",
+    proficiency: "80%"
+  },
+  {
+    title: "MOTION GRAPHICS",
+    proficiency: "80%"
+  },
+  {
+    title: "EDITORIAL DESIGNS",
+    proficiency: "70%"
+  },
+  {
+    title: "UI/UX",
+    proficiency: "75%"
+  },
+]
