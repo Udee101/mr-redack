@@ -51,7 +51,7 @@ html {
     @apply  text-white font-medium text-xl uppercase transition ease-in-out duration-300 hover:text-site-gold hover:scale-105;
   }
   .close-mob-nav {
-    @apply  cursor-pointer absolute top-0 right-0 m-5 w-10 p-2 border border-gray-200 text-white font-bold text-xl hover:text-site-gold hover:border-site-gold;
+    @apply  cursor-pointer absolute top-0 right-0 m-5 w-10 p-2 text-white font-bold text-xl hover:text-site-gold hover:border-site-gold;
   }
   .hero-sec-layout {
     @apply grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center lg:grid-cols-3;
