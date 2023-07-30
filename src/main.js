@@ -1,8 +1,10 @@
-import { createApp } from 'vue'
-import './assets/css/main.css'
-import App from './App.vue'
+import { createApp } from 'vue';
+import './assets/css/main.css';
+import App from './App.vue';
 import router from './router';
+import VueSplide from '@splidejs/vue-splide';
 
 const app = createApp(App);
-app.use(router)
+app.use(router);
+app.use(VueSplide);
 app.mount('#app');
