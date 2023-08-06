@@ -2,6 +2,9 @@
 import { ref } from 'vue';
 import MobileNav from '../components/MobileNav.vue'
 
+defineProps({
+  currentRouteName: String
+})
 const navOpen = ref(false)
 </script>
 
@@ -23,8 +26,8 @@ const navOpen = ref(false)
     enter-from-class="opacity-0 translate-y-52"
     leave-to-class="opacity-0 translate-y-52"
   >
-    <div v-if="navOpen" class="navbar fixed bottom-0 w-full h-[400px] bg-site-black z-[1]">
-      <MobileNav @nav-close="navOpen = false"></MobileNav>
+    <div v-if="navOpen" class="navbar fixed bottom-0 w-full min-h-[100px] bg-site-black z-[1] py-16">
+      <MobileNav @nav-close="navOpen = false" :pageName="currentRouteName"></MobileNav>
     </div>
   </Transition>
 

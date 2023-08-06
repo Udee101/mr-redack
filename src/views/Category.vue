@@ -28,8 +28,8 @@ onMounted(() => {
     <div v-else class=" relative max-w-site-w mx-auto min-h-screen py-14">
       <p class=" hidden absolute right-0 mx-2 py-10 text-site-gold text-4xl font-titleFont md:block">{{ categoryData[id-1].tag }}</p>
       <p class="text-center font-titleFont text-3xl text-site-gold pt-12  md:hidden">{{ categoryData[id-1].tag }}</p>
-      <div v-for="(data, index) in categoryData[id-1].titles" :key="index" class="min-h-[85vh] flex items-center">
-        <div class="grid md:grid-cols-2 md:gap-x-6">
+      <div v-for="(data, index) in categoryData[id-1].titles" :key="index" class="min-h-[70vh] flex items-center">
+        <div class="grid first:mt-6 md:first:mt-40 md:grid-cols-2 md:gap-x-6">
           <ProjectDetails
             :category-data="categoryData[id-1]"
             :index="index"
