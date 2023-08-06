@@ -51,7 +51,7 @@ html {
     @apply  text-white font-medium text-xl uppercase transition ease-in-out duration-300 hover:text-site-gold hover:scale-105;
   }
   .close-mob-nav {
-    @apply  cursor-pointer absolute top-0 right-0 m-5 w-10 p-2 text-white font-bold text-xl hover:text-site-gold hover:border-site-gold;
+    @apply  cursor-pointer absolute top-0 right-0 mr-5 w-10 text-site-gold font-bold text-2xl hover:text-site-gold-100;
   }
   .hero-sec-layout {
     @apply grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center lg:grid-cols-3;
@@ -59,5 +59,4 @@ html {
   .category-card {
     @apply duration-500 text-2xl text-center font-semibold text-white space-y-2 hover:text-site-gold hover:scale-105 lg:text-[1.7rem] lg:text-left lg:grid lg:grid-cols-2 lg:items-center lg:place-items-start;
   }
-  
 }
