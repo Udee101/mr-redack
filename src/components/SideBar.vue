@@ -1,30 +1,36 @@
 <script setup>
 import { navLinks } from '../data/index.js'
-import NavButton from './NavButton.vue';
+
+defineProps({
+  currentRouteName: String
+})
 </script>
 
 <template>
   <div class="h-screen fixed left-0 w-64 sidenav text-white">
     <nav class="px-4 py-10">
-      <div class="logo pr-12 py-1 mt-4 flex place-content-end">
+      <div class="logo pr-12 py-1 flex justify-end mt-4">
         <router-link :to="{name: 'home'}">
           <img src="../assets/images/logo.svg" alt="redack's logo" class=" w-[120px]">
         </router-link>
       </div>
-      <div class="mt-[17vh] flex flex-col place-items-center text-lg">
-        <ul class="space-y-12">
+      <div class="min-h-[75vh] flex flex-col justify-center items-center text-lg">
+        <ul v-if="currentRouteName === 'home'" class="space-y-12">
           <li 
             v-for="navItem in navLinks" 
             :key="navItem.id"
+            class="nav-btn"
           >
-            <nav-button button-class="nav-btn">
-              <a :href="navItem.href">{{ navItem.linkTitle }}</a>
-            </nav-button>
+            <a :href="navItem.href">{{ navItem.linkTitle }}</a>
           </li>
-
-          <!-- <li class="px-4 py-1">
-            <router-link :to="{name: 'portfolio.category'}">Portfolio</router-link>
-          </li> -->
+        </ul>
+        <ul v-else>
+          <li class="nav-btn">
+            <a href="/#portfolio" class="flex items-center gap-2">
+              <img src="../assets/images/carret.svg" alt="left carret">
+              Back Home
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -40,6 +46,5 @@ import NavButton from './NavButton.vue';
     rgb(0, 0, 0),  
     rgb(15, 14, 14)
   );
-  /* backdrop-filter: rgb(27, 25, 25); */
 }
 </style>

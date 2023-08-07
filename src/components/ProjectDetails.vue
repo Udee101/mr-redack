@@ -1,39 +1,33 @@
 <script setup>
-import { computed } from 'vue';
-
 const props = defineProps({
   categoryData: Object,
   title: String,
   index: Number
 })
-
-const switchGridOrder = computed(() => {
-  return props.index % 2 === 0 ? 'md:-order-1 justify-start': 'md:order-1 justify-end'
-})
-const switchTextAlignment = computed(() => {
-  return props.index % 2 === 0 ? 'md:text-left max-w-md' : 'md:text-left max-w-md'
-})
 </script>
 
 <template>
-  <div :class="`${switchGridOrder} order-1 my-5 self-center text-white grid gap-y-4`">
-    <h2 :class="`font-headerFont text-2xl text-center ${switchTextAlignment} md:text-4xl`" v-html="title"></h2>
-    <p :class="`text-center mx-auto ${switchTextAlignment} md:m-0`">
+  <div class="order-1 md:-order-1 mt-20 mb-10 self-center text-white grid gap-y-4 md:my-0">
+    <h2 class="font-headerFont text-2xl text-center md:text-left max-w-md md:text-4xl" v-html="title"></h2>
+    <p class="text-center mx-auto md:text-left max-w-md md:m-0">
       {{ categoryData.descriptions[index] }}
     </p>
   </div>
   
-  <div class="w-full max-w-2xl mt-8 mx-auto md:m-0 md:justify-self-end">
-    <Splide :options="{ rewind: true, gap: '1rem' }" >
+  <div class="w-full max-w-lg h-full flex items-center justify-end mt-8 mx-auto md:m-0">
+    <!-- <Splide :options="{ rewind: true, gap: '1rem' }" >
       <SplideSlide v-for="(imgSrc, i) in categoryData.images[index]" :key="i">
         <img :src="imgSrc" alt="image of portfolio projects">
       </SplideSlide>
-    </Splide>
+    </Splide> -->
+      <div class="project-imgs max-w-full flex flex-row overflow-x-auto gap-x-3 h-full justify-items-center">
+        <img v-for="(imgSrc, i) in categoryData.images[index]" :key="i" :src="imgSrc" alt="" class="w-72 md:w-3/4">
+      </div>
   </div>
 </template>
 
 <style>
-.splide{
+/* .splide{
   padding: 3rem 1rem;
 }
 .splide__arrow {
@@ -69,5 +63,26 @@ const switchTextAlignment = computed(() => {
   .splide__pagination{
     display: none;
   }
+} */
+
+.project-imgs::-webkit-scrollbar {
+  height: 0.5rem;
+
+}
+
+/* Track */
+.project-imgs::-webkit-scrollbar-track {
+  background: #9c9c9c7c; 
+}
+ 
+/* Handle */
+.project-imgs::-webkit-scrollbar-thumb {
+  background: #BE8C07;
+  border-radius: 2rem;
+}
+
+/* Handle on hover */
+.project-imgs::-webkit-scrollbar-thumb:hover {
+  background: #E8b11e; 
 }
 </style>

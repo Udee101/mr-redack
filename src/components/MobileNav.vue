@@ -1,8 +1,9 @@
 <script setup>
 import { navLinks } from '../data/index'
-import NavButton from './NavButton.vue';
 
-
+defineProps({
+  pageName: String
+})
 const emits = defineEmits(['nav-close'])
 const navClose = () => {
   emits('nav-close')
@@ -11,25 +12,28 @@ const navClose = () => {
 
 <template>
   <div class="flex relative place-content-center items-center h-full">
-    <NavButton
-      button-class="close-mob-nav"
-      :click-event="navClose"
-    >
-      <p class="rotate-90">&gt;</p>
-    </NavButton>
+    <div 
+      class="rotate-90 close-mob-nav"
+      @click="navClose"
+    >&gt;</div>
     
     <nav>
-      <ul class="space-y-10">
+      <ul v-if="pageName === 'home'" class="space-y-10">
         <li
           v-for="navItem in navLinks" 
-          :key="navItem.id" 
+          :key="navItem.id"
+          class="nav-btn"
+          @click="navClose"
         >
-          <NavButton 
-            button-class="nav-btn"
-            :click-event="navClose"
-          >
-            <a :href="navItem.href">{{ navItem.linkTitle }}</a>
-          </NavButton>
+          <a :href="navItem.href">{{ navItem.linkTitle }}</a>
+        </li>
+      </ul>
+      <ul v-else>
+        <li class="nav-btn">
+          <a href="/#portfolio" class="flex items-center gap-2">
+            <img src="../assets/images/carret.svg" alt="left carret">
+            Back Home
+          </a>
         </li>
       </ul>
     </nav>
