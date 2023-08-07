@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, ref } from 'vue';
-import { categoryData } from '../data/index';
+import categoryData from "../data/portfolio.json"
 import '@splidejs/vue-splide/css';
 import '@splidejs/vue-splide/css/sea-green';
 import ProjectDetails from '../components/ProjectDetails.vue';
@@ -14,8 +14,8 @@ const props = defineProps({
 
 const isLoading = ref(false)
 onMounted(() => {
-  isLoading.value = true
   window.scrollTo(0, 0)
+  isLoading.value = true
   setTimeout(() => {
     isLoading.value = false
   }, 2000)
@@ -28,7 +28,7 @@ onMounted(() => {
     <div v-else class=" relative max-w-site-w mx-auto min-h-screen py-14">
       <p class=" hidden absolute right-0 mx-2 py-10 text-site-gold text-4xl font-titleFont md:block">{{ categoryData[id-1].tag }}</p>
       <p class="text-center font-titleFont text-3xl text-site-gold pt-12  md:hidden">{{ categoryData[id-1].tag }}</p>
-      <div v-for="(data, index) in categoryData[id-1].titles" :key="index" class="min-h-[70vh] flex items-center">
+      <div v-for="(data, index) in categoryData[id-1].titles" :key="index" class="min-h-[70vh] flex flex-col">
         <div class="grid first:mt-6 md:first:mt-40 md:grid-cols-2 md:gap-x-6">
           <ProjectDetails
             :category-data="categoryData[id-1]"
@@ -42,7 +42,7 @@ onMounted(() => {
 </template>
 
 <style>
-.splide{
+/* .splide{
   padding: 3rem 1rem;
 }
 .splide__arrow {
@@ -78,5 +78,5 @@ onMounted(() => {
   .splide__pagination{
     display: none;
   }
-}
+} */
 </style>

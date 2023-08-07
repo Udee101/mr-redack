@@ -15,6 +15,7 @@
 					<ImageCard
 						card-class="-rotate-[10deg] w-[250px] h-[280px] bg-site-gold p-1 md:w-[280px] h-[380px] md:absolute md:top-0 md:left-28 lg:relative lg:w-[350px] lg:h-[400px]"
 					>
+						<!-- <img src="../../assets/images/about1.svg" class="h-[90%] rotate-[10deg] mx-auto"> -->
 						<div class="w-full h-[90%] bg-orange-950 mx-auto"></div>
 					</ImageCard>
 
