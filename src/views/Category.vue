@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted, ref } from 'vue';
-import { categoryData } from '../data/index';
+// import { categoryData } from '../data/index';
+import categoryData from "../data/portfolio.json"
 import '@splidejs/vue-splide/css';
 import '@splidejs/vue-splide/css/sea-green';
 import ProjectDetails from '../components/ProjectDetails.vue';
