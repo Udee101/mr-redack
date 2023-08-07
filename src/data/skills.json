@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Graphics Design",
+    "tools": ["", ""]
+  },
+  {
+    "id": 2,
+    "title": "PHOTOGRAPHY & EDITING",
+    "tools": ["", ""]
+  },
+  {
+    "id": 3,
+    "title": "VIDEO DIRECTION & EDITING",
+    "tools": ["", ""]
+  },
+  {
+    "id": 4,
+    "title": "MOTION GRAPHICS",
+    "tools": ["", ""]
+  },
+  {
+    "id": 5,
+    "title": "EDITORIAL DESIGNS",
+    "tools": ["", ""]
+  },
+  {
+    "id": 6,
+    "title": "UI/UX",
+    "tools": ["", ""]
+  }
+]
