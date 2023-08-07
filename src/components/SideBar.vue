@@ -1,5 +1,6 @@
 <script setup>
-import { navLinks } from '../data/index.js'
+import navLinks from '../data/navLinks.json'
+import NavLink from './NavLink.vue';
 
 defineProps({
   currentRouteName: String
@@ -16,19 +17,17 @@ defineProps({
       </div>
       <div class="min-h-[75vh] flex flex-col justify-center items-center text-lg">
         <ul v-if="currentRouteName === 'home'" class="space-y-12">
-          <li 
+          <NavLink 
             v-for="navItem in navLinks" 
             :key="navItem.id"
-            class="nav-btn"
+            :navItem="navItem"
           >
-            <a :href="navItem.href">{{ navItem.linkTitle }}</a>
-          </li>
+          </NavLink>
         </ul>
         <ul v-else>
           <li class="nav-btn">
             <a href="/#portfolio" class="flex items-center gap-2">
               <img src="../assets/images/carret.svg" alt="left carret">
-              Back Home
             </a>
           </li>
         </ul>

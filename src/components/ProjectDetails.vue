@@ -14,20 +14,20 @@ const props = defineProps({
     </p>
   </div>
   
-  <div class="w-full max-w-lg h-full flex items-center justify-end mt-8 mx-auto md:m-0">
-    <!-- <Splide :options="{ rewind: true, gap: '1rem' }" >
+  <div class="w-full max-w-lg h-full flex md:justify-self-end mt-8 md:m-0">
+    <Splide :options="{ rewind: true, gap: '1rem' }" >
       <SplideSlide v-for="(imgSrc, i) in categoryData.images[index]" :key="i">
         <img :src="imgSrc" alt="image of portfolio projects">
       </SplideSlide>
-    </Splide> -->
-      <div class="project-imgs max-w-full flex flex-row overflow-x-auto gap-x-3 h-full justify-items-center">
+    </Splide>
+      <!-- <div class="project-imgs max-w-full flex flex-row overflow-x-auto gap-x-3 h-full justify-items-center">
         <img v-for="(imgSrc, i) in categoryData.images[index]" :key="i" :src="imgSrc" alt="" class="w-72 md:w-3/4">
-      </div>
+      </div> -->
   </div>
 </template>
 
 <style>
-/* .splide{
+.splide{
   padding: 3rem 1rem;
 }
 .splide__arrow {
@@ -63,26 +63,26 @@ const props = defineProps({
   .splide__pagination{
     display: none;
   }
-} */
+}
 
-.project-imgs::-webkit-scrollbar {
+/* .project-imgs::-webkit-scrollbar {
   height: 0.5rem;
 
-}
+} */
 
 /* Track */
-.project-imgs::-webkit-scrollbar-track {
+/* .project-imgs::-webkit-scrollbar-track {
   background: #9c9c9c7c; 
-}
+} */
  
 /* Handle */
-.project-imgs::-webkit-scrollbar-thumb {
+/* .project-imgs::-webkit-scrollbar-thumb {
   background: #BE8C07;
   border-radius: 2rem;
-}
+} */
 
 /* Handle on hover */
-.project-imgs::-webkit-scrollbar-thumb:hover {
+/* .project-imgs::-webkit-scrollbar-thumb:hover {
   background: #E8b11e; 
-}
+} */
 </style>

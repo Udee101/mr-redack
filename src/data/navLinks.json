@@ -2,26 +2,26 @@
   {
     "id": 1,
     "linkTitle":"Home",
-    "href": "hero"
+    "href": "#hero"
   },
   {
     "id": 2,
     "linkTitle":"Portfolio",
-    "href": "portfolio"
+    "href": "#portfolio"
   },
   {
     "id": 3,
     "linkTitle":"About",
-    "href": "about"
+    "href": "#about"
   },
   {
     "id": 4,
     "linkTitle":"Skills",
-    "href": "skills"
+    "href": "#skills"
   },
   {
     "id": 5,
     "linkTitle":"Contact",
-    "href": "contact"
+    "href": "#contact"
   }
 ]

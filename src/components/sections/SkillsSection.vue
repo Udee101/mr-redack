@@ -1,5 +1,5 @@
 <script setup>
-import { mySkills } from '../../data';
+import mySkills from '../../data/skills.json';
 import SkillCard from '../SkillCard.vue';
 </script>
 
@@ -12,8 +12,8 @@ import SkillCard from '../SkillCard.vue';
       <p class="hidden absolute right-0 mx-2 my-10 text-site-gold text-2xl font-titleFont md:block md:text-4xl">My skills</p>
       <div class="grid grid-cols-3 gap-y-4 items-start py-10 md:py-32 md:gap-16 lg:min-h-screen">
         <SkillCard 
-          v-for="(skill, index) in mySkills"
-          :key="index"
+          v-for="skill in mySkills"
+          :key="skill.id"
           :skill="skill"
         >          
         </SkillCard>

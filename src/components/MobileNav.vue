@@ -1,5 +1,6 @@
 <script setup>
-import { navLinks } from '../data/index'
+import navLinks from '../data/navLinks.json'
+import NavLink from './NavLink.vue';
 
 defineProps({
   pageName: String
@@ -19,14 +20,13 @@ const navClose = () => {
     
     <nav>
       <ul v-if="pageName === 'home'" class="space-y-10">
-        <li
+        <NavLink
           v-for="navItem in navLinks" 
           :key="navItem.id"
-          class="nav-btn"
-          @click="navClose"
+          :navItem="navItem"
+          @nav-close="navClose"
         >
-          <a :href="navItem.href">{{ navItem.linkTitle }}</a>
-        </li>
+        </NavLink>
       </ul>
       <ul v-else>
         <li class="nav-btn">
