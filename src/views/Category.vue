@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, ref } from 'vue';
-import categoryData from "../data/portfolio.json"
+import {projectData} from "../data/portfolio.js"
 import '@splidejs/vue-splide/css';
 import '@splidejs/vue-splide/css/sea-green';
 import ProjectDetails from '../components/ProjectDetails.vue';
@@ -31,7 +31,7 @@ onMounted(() => {
       <div v-for="(data, index) in categoryData[id-1].titles" :key="index" class="min-h-[70vh] flex flex-col">
         <div class="grid first:mt-6 md:first:mt-40 md:grid-cols-2 md:gap-x-6">
           <ProjectDetails
-            :category-data="categoryData[id-1]"
+            :category-data="projectData[id-1]"
             :index="index"
             :title="data"
           ></ProjectDetails>

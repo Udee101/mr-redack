@@ -1,9 +1,14 @@
-[
+import sm from '../assets/images/sm.svg';
+import brand from '../assets/images/brand.svg';
+import posm from '../assets/images/posm.svg';
+import uiux from '../assets/images/uiux.svg';
+
+export const projectData = [
   {
     "id": 1,
     "name": "Social Media",
     "tag": "Social media",
-    "imgSrc": "../assets/images/sm.svg",
+    "imgSrc": sm,
     "titles": [
       "MAKARI BEBE",
       "DR TEAL<span class='font-mainFont'>'</span>S",
@@ -44,7 +49,7 @@
     "id": 2,
     "name": "Logo & Brand Identity",
     "tag": "Logo design",
-    "imgSrc": "../assets/images/brand.svg",
+    "imgSrc": brand,
     "titles": [
       "VISA <span class='font-mainFont'>4</span> AFRICA",
       "IHEOMA GINKANWA FOUNDATION",
@@ -85,7 +90,7 @@
     "id": 3, 
     "name": "Activations, OOH Podiums",
     "tag": "Activation & Ooh",
-    "imgSrc": "../assets/images/posm.svg",
+    "imgSrc": posm,
     "titles": [
       "SOMMA",
       "LAROCHE POSAY <span class='font-mainFont'>&</span> CERAVE",
@@ -126,7 +131,7 @@
     "id": 4, 
     "name": "UI/UX",
     "tag": "UiUx",
-    "imgSrc": "../assets/images/uiux.svg",
+    "imgSrc": uiux,
     "titles": [
       "PERFECT TRUST",
       "SHEFA INK"
