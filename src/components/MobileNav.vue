@@ -31,7 +31,7 @@ const navClose = () => {
       <ul v-else>
         <li class="nav-btn">
           <a href="/#portfolio" class="flex items-center gap-2">
-            <img src="../assets/images/carret.svg" alt="left carret">
+            <img src="../assets/images/carret.svg" alt="left carret" class="h-12">
             Back Home
           </a>
         </li>
