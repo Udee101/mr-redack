@@ -1,5 +1,5 @@
 <script setup>
-import navLinks from '../data/navLinks.json'
+import {navLinks} from '../data/navLinks.js'
 import NavLink from './NavLink.vue';
 
 defineProps({
