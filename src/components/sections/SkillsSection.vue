@@ -1,5 +1,5 @@
 <script setup>
-import mySkills from '../../data/skills.json';
+import {mySkills} from '../../data/skills.js';
 import SkillCard from '../SkillCard.vue';
 </script>
 

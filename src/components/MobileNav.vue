@@ -1,5 +1,5 @@
 <script setup>
-import navLinks from '../data/navLinks.json'
+import {navLinks} from '../data/navLinks.js'
 import NavLink from './NavLink.vue';
 
 defineProps({
@@ -24,7 +24,7 @@ const navClose = () => {
           v-for="navItem in navLinks" 
           :key="navItem.id"
           :navItem="navItem"
-          @nav-close="navClose"
+          @click="navClose"
         >
         </NavLink>
       </ul>
