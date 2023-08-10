@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Social Media",
     "tag": "Social media",
-    "imgSrc": "src/assets/images/sm.svg",
+    "imgSrc": "../assets/images/sm.svg",
     "titles": [
       "MAKARI BEBE",
       "DR TEAL<span class='font-mainFont'>'</span>S",
@@ -44,7 +44,7 @@
     "id": 2,
     "name": "Logo & Brand Identity",
     "tag": "Logo design",
-    "imgSrc": "src/assets/images/brand.svg",
+    "imgSrc": "../assets/images/brand.svg",
     "titles": [
       "VISA <span class='font-mainFont'>4</span> AFRICA",
       "IHEOMA GINKANWA FOUNDATION",
@@ -85,7 +85,7 @@
     "id": 3, 
     "name": "Activations, OOH Podiums",
     "tag": "Activation & Ooh",
-    "imgSrc": "src/assets/images/posm.svg",
+    "imgSrc": "../assets/images/posm.svg",
     "titles": [
       "SOMMA",
       "LAROCHE POSAY <span class='font-mainFont'>&</span> CERAVE",
@@ -126,7 +126,7 @@
     "id": 4, 
     "name": "UI/UX",
     "tag": "UiUx",
-    "imgSrc": "src/assets/images/uiux.svg",
+    "imgSrc": "../assets/images/uiux.svg",
     "titles": [
       "PERFECT TRUST",
       "SHEFA INK"
