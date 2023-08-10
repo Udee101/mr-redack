@@ -46,6 +46,9 @@ const props = defineProps({
 .splide__arrow svg:hover{
   fill: #ccac53 !important;
 }
+.splide__pagination {
+  z-index: 0;
+}
 .splide__pagination__page.is-active{
   background-color: #BE8C07;
 }
