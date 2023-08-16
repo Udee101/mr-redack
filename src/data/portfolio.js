@@ -141,6 +141,10 @@ export const projectData = [
 
       "As I delved into the task of developing the user interface for Shefa-Ink's company website, I realized the immense opportunity to showcase our exceptional marketing abilities. The user interface would serve as a digital gateway, inviting visitors to explore and experience the innovative strategies and creative solutions we offer. To begin with, I envisioned a visually captivating design that would immediately grab the attention of users. Incorporating vibrant colors, modern typography, and sleek animations, the interface would exude professionalism while reflecting our dynamic approach to marketing. By creating an aesthetically pleasing layout, we could establish credibility and leave a lasting impression on potential clients."
     ],
+    "url": [
+      "https://ptbwcompanyprofile.com/", 
+      "https://shefa-ink.com/"
+    ],
     "images": [
       [
         "https://res.cloudinary.com/dwclpat7w/image/upload/v1691389028/pt6_yisosb.jpg"
