@@ -6,12 +6,13 @@ import lr from '../assets/images/lr.svg';
 import ps from '../assets/images/ps.svg';
 import dr from '../assets/images/dr.svg';
 import xd from '../assets/images/xd.svg';
+import ill from '../assets/images/ill.svg';
 
 export const mySkills = [
   {
     "id": 1,
     "title": "Graphics Design",
-    "tools": [ps, affinity]
+    "tools": [ill, ps, affinity]
   },
   {
     "id": 2,
@@ -31,7 +32,7 @@ export const mySkills = [
   {
     "id": 5,
     "title": "EDITORIAL DESIGNS",
-    "tools": [ps, ai]
+    "tools": [ill, ps, ai]
   },
   {
     "id": 6,
