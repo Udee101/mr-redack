@@ -5,7 +5,8 @@
 		index: Number,
 	});
 
-  const urlBtnClass = 'duration-300 bg-site-gold focus:ring-2 focus:ring-white py-2 rounded-3xl px-6 text-white text-sm hover:bg-site-gold-100'
+	const urlBtnClass =
+		"duration-300 bg-site-gold focus:ring-2 focus:ring-white py-2 rounded-3xl px-6 text-white text-sm hover:bg-site-gold-100";
 </script>
 
 <template>
@@ -20,12 +21,7 @@
 			{{ categoryData.descriptions[index] }}
 		</p>
 		<div v-if="categoryData.url" class="text-center mt-5 md:text-left">
-			<a
-				:href="categoryData.url[index]"
-				target="_blank"
-				:class="urlBtnClass"
-				>View</a
-			>
+			<a :href="categoryData.url[index]" target="_blank" :class="urlBtnClass">View</a>
 		</div>
 	</div>
 
