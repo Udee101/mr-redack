@@ -20,9 +20,6 @@ const props = defineProps({
         <img :src="imgSrc" alt="image of portfolio projects">
       </SplideSlide>
     </Splide>
-      <!-- <div class="project-imgs max-w-full flex flex-row overflow-x-auto gap-x-3 h-full justify-items-center">
-        <img v-for="(imgSrc, i) in categoryData.images[index]" :key="i" :src="imgSrc" alt="" class="w-72 md:w-3/4">
-      </div> -->
   </div>
 </template>
 
@@ -67,25 +64,4 @@ const props = defineProps({
     display: none;
   }
 }
-
-/* .project-imgs::-webkit-scrollbar {
-  height: 0.5rem;
-
-} */
-
-/* Track */
-/* .project-imgs::-webkit-scrollbar-track {
-  background: #9c9c9c7c; 
-} */
- 
-/* Handle */
-/* .project-imgs::-webkit-scrollbar-thumb {
-  background: #BE8C07;
-  border-radius: 2rem;
-} */
-
-/* Handle on hover */
-/* .project-imgs::-webkit-scrollbar-thumb:hover {
-  background: #E8b11e; 
-} */
 </style>
