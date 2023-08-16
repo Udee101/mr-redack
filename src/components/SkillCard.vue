@@ -13,10 +13,14 @@
 				v-for="(tool, index) in skill.tools"
 				:key="index"
 				:src="tool"
-        alt="images of design/editing software"
+				alt="images of design/editing software"
 				class="w-[42%] absolute"
 				:class="[
-					index % 2 === 0 ? 'right-[14%] top-[10%]' : 'left-[14%] bottom-[19%]',
+					index === 0
+						? 'right-[14%] top-[10%]'
+						: index === 1
+						? 'left-[12%] bottom-[19%]'
+						: 'right-[14%] bottom-[10%]',
 				]"
 			/>
 		</div>
