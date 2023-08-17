@@ -50,7 +50,7 @@
         :key="index"
         class="min-h-[70vh] flex flex-col"
       >
-        <div class="grid first:mt-6 md:first:mt-40 md:grid-cols-2 md:gap-x-6">
+        <div class="grid first:mt-6 last:pb-10 md:last:pb-20 md:first:mt-40 md:grid-cols-2 md:gap-x-6">
           <ProjectDetails
             :category-data="project"
             :index="index"
