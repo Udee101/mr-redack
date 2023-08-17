@@ -12,7 +12,7 @@ const heroImg = 'https://res.cloudinary.com/dwclpat7w/image/upload/v1692246294/p
       <div class="hero-sec-layout min-h-[85vh]">
         <div class="mt-20">
           <ProfileImg 
-            :imgClass="'w-[95%] mx-auto'"
+            :imgClass="'w-[80%] mx-auto md:w-[95%]'"
             :imgSrc="heroImg"
           ></ProfileImg>
         </div>
