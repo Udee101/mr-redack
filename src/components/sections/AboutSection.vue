@@ -8,12 +8,14 @@
 		PARAGRAPH_4, 
 		PARAGRAPH_5,
 		IMAGEURL_1,
-		IMAGEURL_2
+		IMAGEURL_2,
+		IMAGEURL_3
 	} from '../../data/about'
 	import ProfileImg from "../ProfileImg.vue";
 
-	const imageClass_1 = 'w-[70%] mx-auto -rotate-[10deg] md:rotate-0 lg:w-[80%]';
+	const imageClass_1 = 'hidden mx-auto md:w-[70%] md:block lg:w-[80%]';
 	const imageClass_2 = 'hidden w-[60%] absolute -right-5 -bottom-10 md:block lg:-bottom-20';
+	const imageClass_3 = 'w-[65%] mx-auto -rotate-[10deg] md:hidden';
 
 	const isFullText = ref(false);
 
@@ -29,6 +31,12 @@
 						<ProfileImg
 							:imgSrc="IMAGEURL_1"
 							:imgClass="imageClass_1"
+						>
+						</ProfileImg>
+
+						<ProfileImg
+							:imgSrc="IMAGEURL_3"
+							:imgClass="imageClass_3"
 						>
 						</ProfileImg>
 
