@@ -11,3 +11,5 @@ export const PARAGRAPH_5 = "Isaac's passion for design and his commitment to exc
 export const IMAGEURL_1 = 'https://res.cloudinary.com/dwclpat7w/image/upload/v1692246294/profile-img1_vke9bw.svg';
 
 export const IMAGEURL_2 = 'https://res.cloudinary.com/dwclpat7w/image/upload/v1692246295/profile-img3_acd1ft.svg';
+
+export const IMAGEURL_3 = 'https://res.cloudinary.com/dwclpat7w/image/upload/v1692246271/profile-img3_1_e6fqgv.svg';
