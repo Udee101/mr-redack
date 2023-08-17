@@ -1,8 +1,6 @@
 <script setup>
 	import { computed, onMounted, ref } from "vue";
 	import { projectData } from "../data/portfolio.js";
-	import "@splidejs/vue-splide/css";
-	import "@splidejs/vue-splide/css/sea-green";
 	import ProjectDetails from "../components/ProjectDetails.vue";
 
 	const props = defineProps({

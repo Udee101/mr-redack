@@ -1,4 +1,7 @@
 <script setup>
+	import "@splidejs/vue-splide/css";
+	import "@splidejs/vue-splide/css/sea-green";
+
 	defineProps({
 		categoryData: Object,
 		title: String,
@@ -26,7 +29,16 @@
 	</div>
 
 	<div class="w-full max-w-lg h-full flex md:justify-self-end mt-8 md:m-0">
-		<Splide :options="{ rewind: true, gap: '1rem' }">
+		<Splide :options="{ 
+			rewind: true,
+			rewindSpeed: 1200,
+			interval: 2500,
+			gap: '1rem',
+			autoplay: true,
+			pauseOnHover: true,
+			speed: 400,
+			easing: 'ease'
+		}">
 			<SplideSlide v-for="(imgSrc, i) in categoryData.images[index]" :key="i">
 				<img :src="imgSrc" alt="image of portfolio projects" />
 			</SplideSlide>
