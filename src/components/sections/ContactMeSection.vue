@@ -7,7 +7,7 @@ import ContactForm from '../ContactForm.vue';
   <section id="contact" class="relative p-4 bg-site-gray overflow-hidden">
     <div class=" relative max-w-site-w mx-auto min-h-screen">
       <p class=" hidden absolute right-0 mx-2 my-14 text-site-gold text-2xl font-titleFont md:block md:text-4xl">Contact</p>
-      <div class="py-14 grid gap-y-5 min-h-[85vh] md:grid-cols-2 md:gap-x-5 md:items-end">
+      <div class="pt-14 pb-20 grid gap-y-5 min-h-[85vh] md:grid-cols-2 md:gap-x-5 md:items-end">
         <div class=" relative md:order-1">
           <SectionText text-class="text-white p-2 md:p-0">
             <template #label>
@@ -21,10 +21,10 @@ import ContactForm from '../ContactForm.vue';
 
           <!-- Social icons for tablet & desktop-->
           <div class="hidden space-x-2 md:flex lg:space-x-4">
-            <a href="#" class="duration-500 hover:opacity-70 hover:-translate-y-1">
+            <a href="https://instagram.com/redack.ng?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" class="duration-500 hover:opacity-70 hover:-translate-y-1">
               <img src="../../assets/images/ig.svg" alt="insagram icon" class="md:h-6 lg:h-9" />
             </a>
-            <a href="#" class="duration-500 hover:opacity-70 hover:-translate-y-1">
+            <a href="https://www.linkedin.com/in/akpoborie-isaac-3328a4194" target="_blank" class="duration-500 hover:opacity-70 hover:-translate-y-1">
               <img src="../../assets/images/linkedin.svg" alt="linkedIn icon" class="md:h-6 lg:h-9" />
             </a>
           </div>
@@ -42,11 +42,11 @@ import ContactForm from '../ContactForm.vue';
         </div>
 
         <!-- Social icons for mobile -->
-        <div class="flex space-x-1 md:hidden">
-          <a href="#">
+        <div class="flex space-x-1 mb-10 md:hidden">
+          <a href="https://instagram.com/redack.ng?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">
             <img src="../../assets/images/ig.svg" alt="insagram icon" />
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/akpoborie-isaac-3328a4194" target="_blank">
             <img src="../../assets/images/linkedin.svg" alt="linkedIn icon" />
           </a>
         </div>
@@ -54,7 +54,7 @@ import ContactForm from '../ContactForm.vue';
 
       <!-- Ring image for tablet & desktop -->
     </div>
-    <div class="hidden absolute right-0 bottom-0 md:block">
+    <div class="hidden absolute right-0 bottom-0 pb-10 md:block">
       <img src="../../assets/images/ring1.svg" alt="golden ring image" class="hidden md:block md:w-40 xl:w-44">
     </div>
   </section>
