@@ -1,17 +1,21 @@
 <script setup>
-import ImageCard from '../ImageCard.vue'
+import ProfileImg from '../ProfileImg.vue';
 import SectionText from '../SectionText.vue'
+
+const heroImg = 'https://res.cloudinary.com/dwclpat7w/image/upload/v1692246294/profile-img2_ujnmjm.svg'
+
 </script>
 
 <template>
   <section id="hero" class="p-4 min-h-screen bg-[url('../../assets/images/bg.svg')] bg-no-repeat bg-center">
     <div class=" max-w-site-w w-full mx-auto py-10">
       <div class="hero-sec-layout min-h-[85vh]">
-        <ImageCard card-class=" w-[300px] h-[420px] bg-site-gold mx-auto p-1 mt-20 md:m-0 md:w-[320px] md:h-[450px] lg:w-[95%]"
-        >
-          <div class=" w-full h-[90%] bg-orange-950 mx-auto"></div>
-        </ImageCard>
-        
+        <div class="mt-20">
+          <ProfileImg 
+            :imgClass="'w-[95%] mx-auto'"
+            :imgSrc="heroImg"
+          ></ProfileImg>
+        </div>
         <SectionText text-class="text-white p-2 space-y-4 mt-4 md:space-y-6 lg:col-span-2 lg:pl-10">
           <template #label>
             <p class="text-site-gold text-2xl font-titleFont md:text-4xl lg:text-[2.75rem]">Portfolio</p>
