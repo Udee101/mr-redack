@@ -1,6 +1,86 @@
 <script setup>
 import SectionText from '../SectionText.vue';
 import ContactForm from '../ContactForm.vue';
+import { ref } from 'vue';
+import { useMotion } from '@vueuse/motion';
+
+  const slideUpX1 = ref()
+  useMotion(slideUpX1, {
+    initial: { opacity: 0, y: 20 },
+    visibleOnce: { 
+      opacity: 1, 
+      y: 0,
+      transition: {
+        duration: 500,
+        delay: 500
+      }							
+    }
+  })
+
+  const slideUpX2 = ref()
+  useMotion(slideUpX2, {
+    initial: { opacity: 0, y: 20 },
+    visibleOnce: { 
+      opacity: 1, 
+      y: 0,
+      transition: {
+        duration: 500,
+        delay: 700
+      }							
+    }
+  })
+
+  const slideUpX3 = ref()
+  useMotion(slideUpX3, {
+    initial: { opacity: 0, y: 20 },
+    visibleOnce: { 
+      opacity: 1, 
+      y: 0,
+      transition: {
+        duration: 500,
+        delay: 900
+      }							
+    }
+  })
+
+  const slideUpIcon = ref()
+  useMotion(slideUpIcon, {
+    initial: { opacity: 0, y: 20 },
+    visibleOnce: { 
+      opacity: 1, 
+      y: 0,
+      transition: {
+        duration: 500,
+        delay: 1000
+      }							
+    }
+  })
+
+  const slideLeft = ref()
+  useMotion(slideLeft, {
+    initial: { opacity: 0, x: 10 },
+    visibleOnce: { 
+      opacity: 1, 
+      x: 0,
+      transition: {
+        duration: 500,
+        delay: 500
+      }							
+    }
+  })
+
+  const slideRight = ref()
+  useMotion(slideRight, {
+    initial: { opacity: 0, x: -10 },
+    visibleOnce: { 
+      opacity: 1, 
+      x: 0,
+      transition: {
+        duration: 500,
+        delay: 500
+      }							
+    }
+  })
 </script>
 
 <template>
@@ -12,19 +92,19 @@ import ContactForm from '../ContactForm.vue';
           <SectionText text-class="text-white p-2 md:p-0">
             <template #label>
               <div class="font-headerFont text-[3.25rem] pb-4 -space-y-3 md:text-8xl md:space-y-2 lg:space-y-4 xl:text-[7.5rem]">
-                <p>I Relish</p>
-                <p>Flawless</p>
-                <p>Designs<span class="text-site-gold">.</span></p>
+                <p ref="slideUpX1">I Relish</p>
+                <p ref="slideUpX2">Flawless</p>
+                <p ref="slideUpX3">Designs<span class="text-site-gold">.</span></p>
               </div>
             </template>
           </SectionText>
 
           <!-- Social icons for tablet & desktop-->
           <div class="hidden space-x-2 md:flex lg:space-x-4">
-            <a href="https://instagram.com/redack.ng?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" class="duration-500 hover:opacity-70 hover:-translate-y-1">
+            <a ref="slideRight" href="https://instagram.com/redack.ng?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" class="duration-500 hover:opacity-70 hover:-translate-y-1">
               <img src="../../assets/images/ig.svg" alt="insagram icon" class="md:h-6 lg:h-9" />
             </a>
-            <a href="https://www.linkedin.com/in/akpoborie-isaac-3328a4194" target="_blank" class="duration-500 hover:opacity-70 hover:-translate-y-1">
+            <a ref="slideLeft" href="https://www.linkedin.com/in/akpoborie-isaac-3328a4194" target="_blank" class="duration-500 hover:opacity-70 hover:-translate-y-1">
               <img src="../../assets/images/linkedin.svg" alt="linkedIn icon" class="md:h-6 lg:h-9" />
             </a>
           </div>
@@ -42,7 +122,7 @@ import ContactForm from '../ContactForm.vue';
         </div>
 
         <!-- Social icons for mobile -->
-        <div class="flex space-x-1 mb-10 md:hidden">
+        <div ref="slideUpIcon" class="flex space-x-1 mb-10 md:hidden">
           <a href="https://instagram.com/redack.ng?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">
             <img src="../../assets/images/ig.svg" alt="insagram icon" />
           </a>

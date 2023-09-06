@@ -27,20 +27,52 @@
 			<p class=" absolute right-0 m-2 text-site-gold text-2xl font-titleFont md:text-4xl">About</p>
 			<div class="min-h-[85vh] grid gap-y-20 lg:grid-cols-2">
 				<div class="mt-32 mx-auto lg:mt-40 lg:order-1">
-					<div class="inline-grid mx-auto relative">
-						<ProfileImg
+					<div
+						class="inline-grid mx-auto relative"
+					>
+						<ProfileImg 
+							v-motion
+							:initial="{ opacity: 0, x: 30 }"
+							:visibleOnce="{ 
+								opacity: 1, 
+								x: 0,
+								transition: {
+									duration: 500
+								}							
+							}"
+							:delay="900"
 							:imgSrc="IMAGEURL_1"
 							:imgClass="imageClass_1"
 						>
 						</ProfileImg>
 
 						<ProfileImg
+							v-motion
+							:initial="{ opacity: 0}"
+							:visibleOnce="{ 
+								opacity: 1, 
+								transition: {
+									duration: 800
+								}							
+							}"
+							:delay="500"
 							:imgSrc="IMAGEURL_3"
 							:imgClass="imageClass_3"
+							class="img-mob"
 						>
 						</ProfileImg>
 
-						<ProfileImg
+						<ProfileImg 
+							v-motion
+							:initial="{ opacity: 0, y: 30 }"
+							:visibleOnce="{ 
+								opacity: 1, 
+								y: 0,
+								transition: {
+									duration: 500
+								}
+							}"
+							:delay="900"
 							:imgSrc="IMAGEURL_2"
 							:imgClass="imageClass_2"
 						>
@@ -48,9 +80,23 @@
 					</div>
 				</div>
 
-				<SectionText text-class="self-center text-center text-white p-4 mx-auto md:text-left md:p-0">
+				<SectionText
+					v-motion
+					:initial="{ opacity: 0, y: 30 }"
+					:visibleOnce="{ 
+						opacity: 1, 
+						y: 0,
+						transition: {
+							duration: 500
+						}							
+					}"
+					:delay="500"
+					text-class="self-center text-center text-white p-4 mx-auto md:text-left md:p-0"
+				>
 					<template #label>
-						<p class="text-2xl pb-2 font-headerFont md:text-3xl md:pb-4 lg:text-5xl">who is Isaac?</p>
+						<p
+							class="text-2xl pb-2 font-headerFont md:text-3xl md:pb-4 lg:text-5xl"
+						>who is Isaac?</p>
 					</template>
 
 					<template #description>
@@ -75,3 +121,9 @@
 		</div>
 	</section>
 </template>
+
+<style>
+.img-mob {
+	transform: rotate(-10deg) !important;
+}
+</style>
