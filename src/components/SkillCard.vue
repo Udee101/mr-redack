@@ -35,15 +35,15 @@
 						: 'right-[14%] bottom-[10%]',
 				]"
 				v-motion
-				:initial="{ opacity: 0, y: 20 }"
+				:initial="{ opacity: 0, scale: 0.5 }"
 				:visibleOnce="{ 
 					opacity: 1, 
-					y: 0,
+					scale: 1, 
 					transition: {
-						duration: 500
-					}							
+						duration: 800,
+					} 
 				}"
-				:delay="1200"
+				:delay="500"
 			/>
 		</div>
 		<p
