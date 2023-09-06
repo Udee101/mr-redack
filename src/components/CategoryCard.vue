@@ -1,14 +1,23 @@
 <script setup>
-  defineProps({
-    pc: Object,
-    // imgSrc: String,
-    // name: String,
-    // categoryId: Number 
-  })
+	defineProps({
+		pc: Object,
+	});
 </script>
 
 <template>
-  <div class="grid grid-flow-col place-items-center lg:self-center">
+	<div
+		v-motion
+		:initial="{ opacity: 0, scale: 0.5 }"
+		:visibleOnce="{ 
+      opacity: 1, 
+      scale: 1, 
+      transition: {
+        duration: 800,
+      } 
+    }"
+		:delay="500"
+		class="grid grid-flow-col place-items-center lg:self-center"
+	>
     <router-link 
       :to="{ name: 'categories.id', params: { id: pc.id } }"
       class="category-card"

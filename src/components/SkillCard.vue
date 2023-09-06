@@ -5,7 +5,19 @@
 </script>
 
 <template>
-	<div class="space-y-4 text-center grid place-items-center p-2">
+	<div
+		v-motion
+		:initial="{ opacity: 0, y: 20 }"
+		:visibleOnce="{ 
+			opacity: 1, 
+			y: 0,
+			transition: {
+				duration: 500
+			}							
+		}"
+		:delay="500"
+		class="space-y-4 text-center grid place-items-center p-2"
+	>
 		<div
 			class="relative w-20 h-20 rounded-full bg-white border-[3px] border-site-gold flex place-items-center md:w-32 md:h-32 lg:w-44 lg:h-44"
 		>
@@ -22,6 +34,16 @@
 						? 'left-[12%] bottom-[19%]'
 						: 'right-[14%] bottom-[10%]',
 				]"
+				v-motion
+				:initial="{ opacity: 0, y: 20 }"
+				:visibleOnce="{ 
+					opacity: 1, 
+					y: 0,
+					transition: {
+						duration: 500
+					}							
+				}"
+				:delay="1200"
 			/>
 		</div>
 		<p
