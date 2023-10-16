@@ -35,7 +35,7 @@
 						: 'right-[14%] bottom-[10%]',
 				]"
 				v-motion
-				:initial="{ opacity: 0, scale: 0.5 }"
+				:initial="{ opacity: 0, scale: 0.2 }"
 				:visibleOnce="{ 
 					opacity: 1, 
 					scale: 1, 

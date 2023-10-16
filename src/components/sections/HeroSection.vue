@@ -9,7 +9,7 @@
 <template>
 	<section
 		id="hero"
-		class="p-4 min-h-screen bg-[url('../../assets/images/bg.svg')] bg-no-repeat bg-center"
+		class="p-4 min-h-screen bg-[url('https://res.cloudinary.com/dxiprgbcc/image/upload/v1697441836/bg_dhp3dy.svg')] bg-no-repeat bg-center"
 	>
 		<div class="max-w-site-w w-full mx-auto py-10">
 			<div class="hero-sec-layout min-h-[85vh]">

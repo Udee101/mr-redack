@@ -1,14 +1,9 @@
-import sm from '../assets/images/sm.svg';
-import brand from '../assets/images/brand.svg';
-import posm from '../assets/images/posm.svg';
-import uiux from '../assets/images/uiux.svg';
-
 export const projectData = [
   {
     "id": 1,
     "name": "Social Media",
     "tag": "Social media",
-    "imgSrc": sm,
+    "imgSrc": 'https://res.cloudinary.com/dxiprgbcc/image/upload/v1697442890/sm_jnsd1q.svg',
     "titles": [
       "MAKARI BEBE",
       "DR TEAL<span class='font-mainFont'>'</span>S",
@@ -49,7 +44,7 @@ export const projectData = [
     "id": 2,
     "name": "Logo & Brand Identity",
     "tag": "Logo design",
-    "imgSrc": brand,
+    "imgSrc": 'https://res.cloudinary.com/dxiprgbcc/image/upload/v1697442883/brand_mtfexu.svg',
     "titles": [
       "VISA <span class='font-mainFont'>4</span> AFRICA",
       "IHEOMA GINKANWA FOUNDATION",
@@ -90,7 +85,7 @@ export const projectData = [
     "id": 3, 
     "name": "Activations, OOH Podiums",
     "tag": "Activation & Ooh",
-    "imgSrc": posm,
+    "imgSrc": 'https://res.cloudinary.com/dxiprgbcc/image/upload/v1697442919/posm_xyldso.svg',
     "titles": [
       "SOMMA",
       "LAROCHE POSAY <span class='font-mainFont'>&</span> CERAVE",
@@ -131,7 +126,7 @@ export const projectData = [
     "id": 4, 
     "name": "UI/UX",
     "tag": "UiUx",
-    "imgSrc": uiux,
+    "imgSrc": 'https://res.cloudinary.com/dxiprgbcc/image/upload/v1697442967/uiux_kxc9ia.svg',
     "titles": [
       "PERFECT TRUST",
       "SHEFA INK"

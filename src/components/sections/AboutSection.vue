@@ -87,10 +87,10 @@
 						opacity: 1, 
 						y: 0,
 						transition: {
-							duration: 500
+							duration: 500,
+							delay: 200
 						}							
 					}"
-					:delay="500"
 					text-class="self-center text-center text-white p-4 mx-auto md:text-left md:p-0"
 				>
 					<template #label>

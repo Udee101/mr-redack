@@ -6,5 +6,5 @@ defineProps({
 </script>
 
 <template>
-  <img :src="imgSrc" :class="imgClass" alt="profile image">
+  <img :src="imgSrc" :class="imgClass" alt="profile image" loading="lazy" />
 </template>
