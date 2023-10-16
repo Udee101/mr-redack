@@ -6,16 +6,6 @@
 
 <template>
 	<div
-		v-motion
-		:initial="{ opacity: 0, y: 20 }"
-		:visibleOnce="{ 
-			opacity: 1, 
-			y: 0,
-			transition: {
-				duration: 500
-			}							
-		}"
-		:delay="500"
 		class="space-y-4 text-center grid place-items-center p-2"
 	>
 		<div
@@ -43,7 +33,8 @@
 						duration: 800,
 					} 
 				}"
-				:delay="500"
+				:delay="200"
+				loading="lazy"
 			/>
 		</div>
 		<p
