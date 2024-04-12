@@ -54,11 +54,10 @@
 							:initial="{ opacity: 0, y: 10 }"
 							:enter="{ opacity: 1, y: 0 }"
 							:delay="1600"
-							class="md:text-xl"
+							class="text-lg md:text-2xl tracking-wide"
 						>
-							Design Consultant - <span class="font-light">Redack</span> <br />
-							Art Director -
-							<span class="font-light">Shefa-Ink Consulting</span>
+							<!-- Design Consultant - <span class="font-light">Redack</span> <br /> -->
+							Art Director.
 						</p>
 					</template>
 				</SectionText>
